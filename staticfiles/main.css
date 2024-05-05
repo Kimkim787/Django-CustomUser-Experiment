@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#main-container{
+    margin-top: 60px;
+    height: 150%;  /*   This is for reference only, must change this to "auto" after section has been added */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+section{
+    color: #000;
+}
+
+.orange-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    height: 60px;
+    max-width: 299px;
+    z-index: 1000;
+    background-color: #FF8000;
+}
+
+.logo{
+    height: 55px;
+    margin-left: 15px;
+}
+
+.bars{
+    margin-right: 15px;
+    height: 25px;
+}
+
+.search-container {
+    width: 70%;
+    background-color: #f1f1f1; 
+    padding: 12.5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon i {
+    margin-right: 10px;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+}
+
+input[type="text"] 
+{
+    padding: 9.6px;
+    border: transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    align-items:left;
+    color: black;
+    width: 300px;
+    
+}
+
+#side-nav
+{
+    color: #fff;
+    width: 30%;
+    height: 100%;
+    max-width: 299px;
+    position: sticky;       /* WHY IS THIS NOT WORKING? */
+    background: #4682B4;
+}
+
+#side-nav ul{
+    position: sticky;
+    height: auto;
+}
+
+#side-nav li
+{
+    line-height: 30px;
+}
+
+#side-nav ul li{
+    line-height: 50px;
+    border-bottom: 1px solid #2B40D1;
+}
+
+#side-nav ul ul{
+    position: static;
+    display: none;
+}
+
+#side-nav ul.studentlife.show{
+    display: block;
+}
+
+#side-nav ul.scholar-show.show2{
+    display: block;
+}
+
+#side-nav ul.jobplace-show.show3{
+    display: block;
+}
+
+#side-nav ul.student_disc-show.show4{
+    display: block;
+}
+
+#side-nav ul.guide-show.show5{
+    display: block;
+}
+
+#side-nav ul.alumni-show.show6{
+    display: block;
+}
+
+#side-nav ul.community-show.show7{
+    display: block;
+}
+
+#side-nav ul.student_org-show.show8{
+    display: block;
+}
+
+#side-nav ul.medical-show.show9{
+    display: block;
+}
+
+#side-nav ul ul li{
+    line-height: 40px;
+}
+
+#side-nav ul ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 60px;
+}
+
+#side-nav ul li p:hover{
+    background: #3e74a0;
+    border-left-color: white;
+}
+
+/* #side-nav ul ul li:hover{
+    background: #3e74a0;
+    border-left-color: white;
+} */
+
+#side-nav ul li p
+{
+    position: relative;
+    color: white;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 14px;  
+    display: block;
+    width: 100%;
+    border-left: 5px solid transparent;
+}
+
+#side-nav ul li p span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    transition: transform 0.4s;
+}
+
+#side-nav ul li p span.rotate{
+    transform:  translateY(-50%) rotate(-180deg);
+}
+
+
+.content-container{
+    background-color: #121314;
+    margin-left: 50%;
+    margin-top: 120px;
+}
